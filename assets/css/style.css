@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #1463c7;
-    --secondary-color: #0c3972;
-    --tertiary-color: #e6e6e6;
-    --quaternary-color: #a1a1a1;
+    --primary-color: #163055;
+    --secondary-color: #92CCCE;
+    --tertiary-color: #31343D;
+    --quaternary-color: #EEEEF7;
 }
   
 * {
@@ -12,29 +12,33 @@
 }
 
 body {
-    background-color: var(--tertiary-color);
-    font-family: 'Roboto Slab', serif, 'Roboto', sans-serif;
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+/* Header Style Start */
 header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
-    padding: 10px 10px 15px 10px;
-    top: 0;
-    background: linear-gradient(#1463c7, #0c3972);
-    color: var(--quaternary-color);
+    padding: 0 0 0 0;
+    background: var(--tertiary-color);
     text-align: center;
 }
 
 header h1 {
     font-weight: bold;
     display: flex;
-    margin-top: 20px;
-    font-size: 36px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    margin: 15px 0 15px 0;
+    font-size: 55px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-right: 10px;
 }
 
 header a {
@@ -43,7 +47,7 @@ header a {
 }
   
 header nav {
-    margin: 35px 0;
+    margin: 30px 20px 0 0;
 }
   
 header nav ul {
@@ -55,21 +59,75 @@ header nav ul {
 }
   
 header nav ul li a {
-    padding: 15px 15px;
+    padding: 15px 15px 10px 15px;
     font-size: 1.55vw;
     font-weight: lighter;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: var(--quaternary-color);
+    color: var(--secondary-color);
+    margin: 0 10px 0 10px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondary-color);
 }
   
 header nav ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--quaternary-color);
     text-shadow: none;
 }
+/* Header Style End */
 
-header img {
+/* Hero Style Start */
+.hero {
+    background-image: url('../images/Hero\ pic.jpg');
+    background-size: cover;
     display: flex;
-    height: 100px;
-    width: 100px;
-    margin-left: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
+
+.hero h2 {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    display: flex;
+    margin: 225px 35px 15px 1350px;
+    padding: 15px 15px 15px 15px;
+    font-size: 36px;
 }
+/* Hero Style End */
+
+/* About Me Section Style Start */
+.eric {
+    width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eric h2 {
+    font-size: 55px;
+    padding-right:25px;
+}
+
+.eric p {
+    font-size: 20px;
+    padding-left: 15px;
+    border-left-style: solid;
+    border-left-color: var(--primary-color);
+}
+/* About Me Section Style End */
+
+/* Work Section Style Start */
+.examples h2 {
+    font-size: 55px;
+    padding-right:25px;
+}
+/* Work Section Style End */
+
+/* Contact Section Style Start */
+.reach-out h2 {
+    font-size: 55px;
+    padding-right:25px;
+}
+/* Contact Section Style End */
