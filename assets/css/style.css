@@ -83,14 +83,15 @@ header nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
+    background-attachment: scroll;
+    background-position: 100%;
   }
 
 .hero h2 {
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     display: flex;
+    flex-wrap: wrap;
     margin: 275px 35px 25px 1350px;
     padding: 15px 15px 15px 15px;
     font-size: 36px;
@@ -206,3 +207,74 @@ header nav ul li a:hover {
     margin: 0 10px 0 10px;
 }
 /* Contact Section Style End */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1570px) {
+    header h2 {
+        opacity: 0%;
+    }
+
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+      font-size: xx-large;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+    }
+  
+    header nav ul {
+      margin: 0 0 0 0;
+      width: 100%;
+      justify-content: center;
+      padding: 0 0 0 0;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .hero {
+        width: 100%;
+        height: 240px;
+    }
+
+    .reach-out {
+        width: 100%;
+    }
+}
+  
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    header h1 {
+        text-align: center;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-size: xx-large;
+    }
+
+    header nav ul {
+        margin: 0 0 0 0;
+    }
+
+    .hero {
+        width: 100%;
+        height: 120px;
+    }
+
+    .reach-out {
+        width: 100%;
+    }
+}
