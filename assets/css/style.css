@@ -17,6 +17,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+
 /* Header Style Start */
 header {
     display: flex;
@@ -84,7 +85,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: scroll;
-    background-position: 100%;
+    background-position: 80%;
   }
 
 .hero h2 {
@@ -110,6 +111,8 @@ header nav ul li a:hover {
 
 .eric h2 {
     font-size: 55px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px 200px 10px 15px;
 }
 
@@ -135,6 +138,8 @@ header nav ul li a:hover {
 
 .examples h2 {
     font-size: 55px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px 200px 10px 15px;
 }
 
@@ -194,6 +199,8 @@ header nav ul li a:hover {
 
 .reach-out h2 {
     font-size: 55px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px 15px 10px 15px;
 }
 
@@ -215,3 +222,38 @@ header nav ul li a:hover {
 /* Contact Section Style End */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1590px) {
+    .hero h2 {
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        position: relative;
+    }
+
+    .hero h2 {
+        position: relative;
+        font-size: 40px;
+        margin: auto;
+    }
+
+    .eric h2 {
+        font-size: 40px;
+    }
+
+    .examples h2 {
+        font-size: 40px;
+    }
+
+    .reach-out h2 {
+        font-size: 40px;
+    }
+
+    .reach-out p ul li {
+        position: relative;
+        margin: auto;
+    }
+}
