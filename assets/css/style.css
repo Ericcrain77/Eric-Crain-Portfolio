@@ -43,6 +43,10 @@ header h1 {
     padding-bottom: 5px;
 }
 
+header h1 img {
+    height: 65px;
+}
+
 header a {
     text-decoration: none;
     color: var(--primary-color);
@@ -174,11 +178,24 @@ header nav ul li a:hover {
 .examples #horiseon {
     display: block;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 25%;
     height: 25%;
 }
 
 .examples #horiseon:hover {
+    opacity: 40%;
+}
+
+.examples #sneak-peek {
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: 25%;
+}
+
+.examples #sneak-peek:hover {
     opacity: 40%;
 }
 
