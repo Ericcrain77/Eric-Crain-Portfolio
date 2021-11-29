@@ -199,6 +199,17 @@ header nav ul li a:hover {
     opacity: 40%;
 }
 
+.examples #Table-Top-Warriors {
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: 25%;
+}
+
+.examples #Table-Top-Warriors:hover {
+    opacity: 40%;
+}
+
 /* Work Section Style End */
 
 /* Contact Section Style Start */
